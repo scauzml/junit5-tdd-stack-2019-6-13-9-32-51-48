@@ -78,5 +78,17 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Whizz",result);
 
     }
+    @Test
+    public void should_return_14_when_is_Whizz() {
+        //given
+        int num=14;
+
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result= fizzBuzz.coverto(num);
+        //then
+        Assertions.assertEquals("Whizz",result);
+
+    }
 
 }
