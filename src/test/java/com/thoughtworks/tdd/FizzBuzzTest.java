@@ -41,7 +41,7 @@ public class FizzBuzzTest {
 
     }
     @Test
-    public void should_return_5_when_is_Buzz() {
+    public void should_return_Buzz_when_num_is_5() {
         //given
         int num=5;
 
@@ -54,7 +54,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    public void should_return_10_when_is_Buzz() {
+    public void should_return_Buzz_when_num_is_10() {
         //given
         int num=10;
 
@@ -79,7 +79,7 @@ public class FizzBuzzTest {
 
     }
     @Test
-    public void should_return_14_when_is_Whizz() {
+    public void should_return_14_when_is_7() {
         //given
         int num=14;
 
@@ -88,6 +88,18 @@ public class FizzBuzzTest {
         String result= fizzBuzz.coverto(num);
         //then
         Assertions.assertEquals("Whizz",result);
+
+    }
+    @Test
+    public void should_return_FizzBuzz_when_num_is_3_or_5() {
+        //given
+        int num=15;
+
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result= fizzBuzz.coverto(num);
+        //then
+        Assertions.assertEquals("FizzBuzz",result);
 
     }
 
