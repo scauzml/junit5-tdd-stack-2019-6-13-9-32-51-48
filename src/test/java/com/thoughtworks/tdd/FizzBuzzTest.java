@@ -52,4 +52,18 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Buzz",result);
 
     }
+
+    @Test
+    public void should_return_10_when_is_Buzz() {
+        //given
+        int num=10;
+
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result= fizzBuzz.coverto(num);
+        //then
+        Assertions.assertEquals("Buzz",result);
+
+    }
+
 }
