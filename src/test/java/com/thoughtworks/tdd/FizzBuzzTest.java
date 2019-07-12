@@ -126,4 +126,16 @@ public class FizzBuzzTest {
         Assertions.assertEquals("BuzzWhizz",result);
 
     }
+    @Test
+    public void should_return_FizzBuzzWhizz_when_num_is_3_5_OR_7() {
+        //given
+        int num=15*7;
+
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result= fizzBuzz.coverto(num);
+        //then
+        Assertions.assertEquals("FizzBuzzWhizz",result);
+
+    }
 }
