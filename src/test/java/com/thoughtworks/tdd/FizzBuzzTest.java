@@ -40,4 +40,16 @@ public class FizzBuzzTest {
         Assertions.assertEquals("Fizz",result);
 
     }
+    @Test
+    public void should_return_5_when_is_Buzz() {
+        //given
+        int num=5;
+
+        //when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result= fizzBuzz.coverto(num);
+        //then
+        Assertions.assertEquals("Buzz",result);
+
+    }
 }
