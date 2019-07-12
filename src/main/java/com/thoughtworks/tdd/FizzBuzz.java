@@ -4,6 +4,9 @@ public class FizzBuzz {
 
     public  String coverto(Integer num) {
         String result=num.toString();
+        if(num%3==0&&num%7==0){
+            return result = "FizzWhizz";
+        }
         if(num%3==0&&num%5==0){
             return result = "FizzBuzz";
         }
